@@ -1,0 +1,88 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    company: "X",
+    title: "Content Creator",
+    location: "",
+    description: [
+      "Creating daily content about SaaS and software development.",
+    ],
+    date: "Currently...",
+    link: "https://x.com/chrix_saas",
+  },
+  {
+    company: "Gapcommerce",
+    title: "Senior Frontend Developer",
+    location: "Remote",
+    description: [
+      "Led frontend development for ecommerce solutions, building responsive, high-performance applications tailored to user needs. Implemented SCSS for scalable and maintainable styles, ensuring cross-browser compatibility.",
+      "Integrated payment processing with Stripe and optimized the site for SEO, leading to a significant increase in site traffic and conversion rates."
+    ],
+    date: "Oct 2021 - May 2022",
+    type: "Full-time",
+    technologies: ["JavaScript", "React", "SCSS", "GraphQL", "Stripe"]
+  },
+  {
+    company: "ChagodTour",
+    title: "Senior Frontend Developer",
+    location: "Remote",
+    description: [
+      "Spearheaded the development of frontend applications from the ground up, delivering fully responsive and user-friendly interfaces using Next.js and Styled-Components.",
+      "Integrated complex GraphQL APIs for efficient data management and Stripe for seamless payment solutions.",
+      "Collaborated with cross-functional teams to ensure the delivery of high-quality products within tight deadlines."
+    ],
+    date: "May 2022 - Jun 2023",
+    type: "Full-time",
+    technologies: ["Next.js", "TypeScript", "Styled-Components", "GraphQL", "Stripe"]
+  },
+  {
+    company: "Sleepzzone",
+    title: "Fullstack web developer",
+    location: "Spain",
+    description: [
+      "Led the full-cycle development of the platform, from initial design to deployment.",
+      "Created dynamic and interactive forms to capture user input, ensuring seamless data validation and processing.",
+      "Collaborated closely with stakeholders to define requirements and deliver a user-friendly, scalable solution.",
+      "Optimized form logic to enhance performance and usability, reducing user errors and improving overall experience."
+    ],
+    date: "Jun 2020 - Sep 2020",
+    type: "Part-time",
+    technologies: ["Next.js", "React", "JavaScript", "Tailwind CSS", "Strapi"]
+  },  
+  {
+    company: "Sunshine Packaging",
+    title: "Fullstack web developer",
+    location: "Miami, FL",
+    description: [
+      "Developed a custom web application for a box manufacturing company, including a dynamic pricing system for real-time quotes based on box dimensions and specifications."
+    ],
+    date: "May 2024 - Sep 2024",
+    type: "Part-time",
+    technologies: ["Next.js", "React", "JavaScript", "TailwindCSS", "Firebase"]
+  },
+  {
+    company: "Freelance",
+    title: "Fullstack web developer",
+    location: "Remote",
+    description: [
+      "Designed and developed web applications for clients from various industries, focusing on performance, usability, and best coding practices.",
+      "Improved site load times and performance metrics through in-depth optimization and refactoring efforts.",
+      "Successfully built custom solutions from scratch, including payment integrations, dynamic content management, and user authentication."
+    ],
+    date: "Apr 2019 - present",
+    type: "Self-employed",
+    technologies: ["TypeScript", "Next.js", "Firebase", "Tailwind CSS", "Stripe"]
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
